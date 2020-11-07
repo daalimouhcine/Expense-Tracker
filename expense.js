@@ -121,16 +121,22 @@ function returnStorage() {
         //Creat element in table
         const trow = document.createElement("tr");
         const tName = document.createElement("td");
-
+        const tDate = document.createElement("td");
+        const tAmount = document.createElement("td");
+        const tDelete = document.createElement("td");
             //Add the content
             tName.innerText = nameItem[item];
+            tDate.innerText = dateItem[item];
+            tAmount.innerText = amountItem[item];
             tDelete.innerHTML = '<button class="delete-btn"><i class="fas fa-trash"></i></button>';
 
             
         //append the elements
         tbody.appendChild(trow);
         trow.appendChild(tName);
-
+        trow.appendChild(tDate);
+        trow.appendChild(tAmount);
+        trow.appendChild(tDelete);
 
 
     });
