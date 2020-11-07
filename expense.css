@@ -134,6 +134,7 @@ table tbody tr td button:hover {
 table tbody tr td button i {
     color:red;
     font-size:1rem;
+    pointer-events: none;
 }
 
 .empty {
